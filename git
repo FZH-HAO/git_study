@@ -1,0 +1,28 @@
+git 操作流程
+
+安装：在镜像淘宝里安装速度快https://npm.taobao.org/mirrors/git-for-windows/
+
+注册姓名和邮箱
+git config --global  
+查看信息
+git config --list 
+
+创建  版本库，仓库
+目录
+初始化工作目录 git init
+
+核心框架
+
+三个部分：
+1.工作目录 ：本地目录
+2.暂存区域 ：准备提交
+3.git仓库：从暂存区域，提交内容
+
+工作目录修改好了=》提交到暂存区域=》git仓库
+
+git add +文件名   提交到暂存区域
+git commit -m "提交成功了"  
+git restore --staged +文件名  取消暂存区域的文件
+
+
+

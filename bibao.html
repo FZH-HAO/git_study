@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        body{
+            font-family: "Arial Black";
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        
+    </div>
+            <div>
+                
+            </div>
+    <div></div>
+    <div></div>
+
+  <script type="application/javascript">
+     /* var x = 1;
+      if(function f() {}){
+          x += typeof f;
+      }
+      console.log(x)*/
+  </script>
+  <script type="application/javascript">
+// 主流浏览器：IE trident  chrome website/blink   firefox Gecko   Opera presto  safari website
+
+
+//原始值和引用值
+
+  //原始值：Number string boolean  undefined null
+
+  //引用值： function  object array date  regexp
+ /*1.交换ab的值 */
+/*  var a = 123;
+  var b = 234;
+
+  var c = 0
+
+  /!*c = a ;
+  a = b ;
+  b = c ;*!/
+  a = a + b;
+  b = a - b;
+  a = a - b;
+  console.log(a,b)*/
+
+//js运算符
+  /*   = + * / % = （）   */
+  /*1%0 infinity number*/
+
+/* == ++ += -= *= /=  */
+
+// 2的n次幂
+
+/*
+   var n = parseInt(window.prompt());
+   var num =1;
+   for( i=1 ; i<=n ;i++){
+      num *= 2
+   }
+   console.log(num)
+
+  // n的阶层
+    for(i = 1; i <= n ; i++){
+        num *= i
+    }
+    console.log(num)
+*/
+//斐波拉
+/*var n = parseInt(window.prompt());
+
+  var first=1;
+  var second =1;
+  var third;
+for(i = 2 ; i < n; i++){
+     if( n ==1 || n == 2 ){
+         console.log(1)
+     }else{
+         third = first + second;
+         first = second;
+         second = third;
+     }
+
+}
+console.log(third)*/
+
+/*输入一个三位数，输出反向数*/
+
+/*var n = parseInt(window.prompt())
+
+var baiwei ;
+var shiwei ;
+var gewei;
+var num = n;
+
+baiwei =parseInt(n/100) ;
+shiwei =parseInt((n-baiwei*100)/10);
+gewei  =(n-baiwei*100)%10;
+
+num = baiwei+shiwei*10+ gewei*100;
+console.log(num)*/
+
+/*var a = parseInt(window.prompt('input'));
+var b = parseInt(window.prompt('input'));
+var c = parseInt(window.prompt('input'));
+
+if (a>b){
+    if(a>c){
+        console.log("a最大:"+a)
+    }else {
+        console.log("c最大:"+c)
+    }
+
+    }else if(b>c){
+        console.log("b最大:"+b)
+    }else {
+       console.log("c最大:"+c)
+    }*/
+    /*var  count = 0;
+    for(i = 1 ;i < 100; i++){
+        for(j = 1 ; j<= i;j++){
+            if(i%j == 0){
+                count ++
+            }
+        }
+        if( count == 2){
+            document.write(i + " ")
+        }
+        count = 0
+    }*/
+   /*
+   知识点
+   parseInt(num,2)这是以2数进制转化成10进制
+   toString()这个是以10进制转化成任意进制数
+   number（）不能转化带非数的字符串，而parseInt可以转化
+   tofixed（）保留几位小数、
+
+
+
+   函数定义：
+
+   函数声明
+   命名函数表达式
+    函数表达式
+   */
+
+/*    function reverse() {
+        var num = window.prompt('input');
+        var str = '';
+        for(var i=num.length-1; i>=0; i--){
+            str += transfer(num[i])
+        }
+        document.write(str)
+    }
+
+    function transfer(target) {
+        switch (target){
+            case "1":
+                return "壹";
+                break;
+            case "2":
+                return "贰";
+                break;
+            case "3":
+                return "叁";
+                break;
+        }
+
+    }
+    reverse()*/
+
+
+/*function fb(n) {
+    var third;
+    var first=1;
+    var second=1;
+    for(i = 2 ; i < n; i++){
+        if( n ==1 || n == 2 ){
+            console.log(1)
+        }else{
+            third = first + second;
+            first = second;
+            second = third;
+        }
+
+    }
+    console.log(third)
+}
+
+fb(6)*/
+
+/*递归
+ 阶乘
+ */
+/*  function num(n) {
+      if(n == 1){
+          return 1
+      }
+      return n*num(n-1)
+  }*/
+
+//实现小于10位数的返回数
+
+
+
+
+
+
+      /*function test() {
+          var arr = [];
+          for(i = 0; i < 10;i++){
+//               arr[i] = function () {
+//                  document.write(i + "")
+//              }
+              (function (j) {
+                 arr[j] =  function () {
+                     console.log(j)
+                 }
+              }(i))
+
+          }
+          return arr
+      }
+      var myArr = test();
+      for(j = 0; j < 10 ; j ++){
+          myArr[j]()
+      }*/
+
+
+      /*var obj ={
+          name : "xiaozhang",
+          age : 16,
+          sex : "man",
+      }
+      var obj1 = {}
+      function clone( origin, target ) {
+         var target = target || {};
+         for (var prop in origin){
+             target[prop] = origin[prop]
+         }
+         return target
+      }
+       obj2=clone(obj)*/
+
+    /*  function deepClone(origin,target) {
+          var target = target || {} ;
+          var toStr = Object.prototype.toString ;
+          var arrType = "[Object Array]" ;
+          for(var prop in origin){
+              if(origin.hasOwnProperty(prop)){
+                  if(origin[prop] !== null && typeof origin[prop] == Object){
+                     /!* if(toStr.call(origin[prop])== arrType){
+                          target[prop] = []
+                      }else {
+                          target[prop] = {}
+                      }*!/
+                      target[prop] = toStr.call(origin[prop]) == arrType ? [] : {} ;
+                      deepClone(origin[prop],target[prop])
+                  }else {
+                      target[prop] = origin[prop]
+                  }
+              }
+          }
+          return target
+      }*/
+
+    /*  var arr = [1,2,5,4,10]
+        arr.sort(function (a,b) {
+            return b - a;
+        })*/
+
+   /*   function type(target) {
+          var template = {
+              "Object Array" : "array",
+              "Object Object" : "object",
+              "Object Number" : "number",
+              "Object Boolean" : "boolean",
+              "Object String" : "string",
+          }
+          if(target === null){
+              return null
+          }else if(typeof(target) == "object"){
+              var str = Object.prototype.toString().call(target);
+
+              return template[str]
+          }else {
+              return typeof(target)
+          }
+      }*/
+
+
+    var arr = [1,1,1,2,3,4,2,6,2,5];
+      Array.prototype.unique=function () {
+          var temp= {};
+          var arr = [];
+          var len = this.length
+          for(var i = 0;i<len; i++){
+              if(!temp[this[i]]){
+                  temp[this[i]] = 'abc';
+                  arr.push(this[i]);
+              }
+          }
+          return arr
+       }
+/*function sort(array){
+    for(var i=0;i<array.length;i++){
+        for(var j=i+1;j<array.length;j++){
+            var temp=""
+            if(array[i]<array[j]){
+                temp=array[i];
+                array[i]=array[j];
+                array[j]=temp
+            }
+        }
+    }
+    return array
+}
+console.log(sort(arr))*/
+console.log(arr.sort().reverse())
+
+  </script>
+</body>
+</html>
